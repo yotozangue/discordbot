@@ -1,0 +1,9 @@
+node_modules
+dist
+lib
+docker-compose.dev.yml
+.env
+.env.development
+.env.production
+.vscode
+.vs

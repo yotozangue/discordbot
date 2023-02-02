@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+    bot:
+        container_name: bot
+        build:
+            context: .
+            target: prod
+        env_file:
+            - .env
+        volumes:
+            - .:/usr/src/app
+        ports:
+            - ${PORT}:${PORT}
+        restart: always
+        command: npm start
+
